@@ -1,0 +1,4 @@
+interface:
+  display_name: "Release"
+  short_description: "Run a project release safely."
+  default_prompt: "Use the release skill to run the project release process: discover checks, run lint/tests, commit, push, tag, and verify CI/CD."
