@@ -1,0 +1,4 @@
+interface:
+  display_name: "Refactoring"
+  short_description: "Plan and execute safe refactors."
+  default_prompt: "Use the refactoring skill to identify a safe, behavior-preserving refactor plan and carry it through with focused verification."

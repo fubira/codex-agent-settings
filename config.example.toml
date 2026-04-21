@@ -1,0 +1,7 @@
+model = "gpt-5.4"
+model_reasoning_effort = "medium"
+
+# Machine-local project trust settings belong in config.toml and should not be committed.
+# Example:
+# [projects."/path/to/project"]
+# trust_level = "trusted"

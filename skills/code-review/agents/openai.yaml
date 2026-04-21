@@ -1,0 +1,4 @@
+interface:
+  display_name: "Code Review"
+  short_description: "Review diffs with baseline checks."
+  default_prompt: "Review the current changes using the code-review skill."

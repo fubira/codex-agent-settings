@@ -1,0 +1,25 @@
+# Ignore everything by default. This directory contains auth, session logs,
+# SQLite state, caches, and machine-local configuration.
+*
+
+# Shared repository metadata and documentation.
+!/.gitattributes
+!/.gitignore
+!/README.md
+
+# Shared Codex instructions.
+!/AGENTS.md
+
+# Share a sanitized config template, not the machine-local config.toml.
+!/config.example.toml
+
+# Shared approval rules.
+!/rules/
+!/rules/default.rules
+
+# User-installed skills that should follow the base setup.
+!/skills/
+!/skills/code-review/
+!/skills/code-review/**
+!/skills/refactoring/
+!/skills/refactoring/**
