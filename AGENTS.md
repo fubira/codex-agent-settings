@@ -81,7 +81,7 @@
 - **時間コストに不寛容に**。長時間テストを安易に提案せず、まず小さく速く確認
 - **継承パラメータ・公式を盲信しない**。長期稼働中の「構造的」とされる値は見落としになりがち。新手法採用時は前提軸を再確認、公式コメントと実装の実際の意味が一致しているか検証、最適化結果の「構造的」主張が指標自体の前提に縛られる循環を疑う
 
-詳細: `~/.AGENTS/knowledge/best-practices/problem-solving-principles.md` / `inherited-parameter-audit.md`
+詳細: `/mnt/c/Users/matsushita/obsidian/notes/RESOURCES/AI_KNOWLEDGE/best-practices/problem-solving-principles.md` / `inherited-parameter-audit.md`
 
 ## 技術スタック
 
@@ -170,7 +170,15 @@ PR スタイル開発では `codeartsjp/codearts-pr-reviewer` の導入を推奨
 - **Vault**: `/mnt/c/Users/matsushita/obsidian/notes`（WSL経由、`Read`/`Write`/`Edit` で読み書き）
 - ディレクトリ構成: `WORK/`（仕事プロジェクト）、`PERSONAL/`（個人、AI編集対象外）、`RESOURCES/`、`JOURNALS/`、`ARCHIVES/`
 - 仕事プロジェクト: `WORK/{ORG}_{PROJECT}/`（例: `WORK/CODEARTS_たてやまくん/`）
-- AI が書き込むのは `WORK/` 配下のみ。`PERSONAL/` は手動管理のため触らない
+- 共有知識: `RESOURCES/AI_KNOWLEDGE/`
+- AI が書き込むのは `WORK/` 配下と `RESOURCES/AI_KNOWLEDGE/` 配下のみ。`PERSONAL/` は手動管理のため触らない
+
+### Knowledge
+
+- Claude / Codex で共有する汎用知識は `RESOURCES/AI_KNOWLEDGE/` に置く
+- 関連作業では必要に応じて `RESOURCES/AI_KNOWLEDGE/**/INDEX.md` を確認し、該当ファイルだけ読む
+- すべての knowledge を常時読み込まない。文脈に必要な最小限のファイルだけ参照する
+- 新しい知見を追加する場合は、既存カテゴリと `FRONTMATTER.md` を確認し、対応する `INDEX.md` も更新する
 
 ### タグの制約
 
