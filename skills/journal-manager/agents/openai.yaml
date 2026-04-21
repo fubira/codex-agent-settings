@@ -1,0 +1,4 @@
+interface:
+  display_name: "Journal Manager"
+  short_description: "Manage Obsidian work journals"
+  default_prompt: "Use $journal-manager to create or organize Obsidian work journals for analysis and decisions."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Knowledge Manager"
+  short_description: "Maintain shared AI knowledge"
+  default_prompt: "Use $knowledge-manager to record or retrieve reusable project knowledge from the shared Obsidian AI_KNOWLEDGE base."

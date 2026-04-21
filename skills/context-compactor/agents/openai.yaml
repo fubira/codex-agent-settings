@@ -1,0 +1,4 @@
+interface:
+  display_name: "Context Compactor"
+  short_description: "Audit and compact context files"
+  default_prompt: "Use $context-compactor to audit context-heavy Codex files and propose safe compaction."

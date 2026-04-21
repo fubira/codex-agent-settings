@@ -1,0 +1,4 @@
+interface:
+  display_name: "Git Commit Assistant"
+  short_description: "Prepare safe Git commits"
+  default_prompt: "Use $git-commit-assistant to review changes, stage safe files, and prepare a Conventional Commit."

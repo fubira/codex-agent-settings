@@ -19,9 +19,7 @@
 
 # User-installed skills that should follow the base setup.
 !/skills/
-!/skills/code-review/
-!/skills/code-review/**
-!/skills/refactoring/
-!/skills/refactoring/**
-!/skills/release/
-!/skills/release/**
+!/skills/*/
+!/skills/*/**
+/skills/.system/
+/skills/.system/**

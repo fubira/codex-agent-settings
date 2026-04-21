@@ -1,0 +1,4 @@
+interface:
+  display_name: "Test Executor"
+  short_description: "Run and interpret project tests"
+  default_prompt: "Use $test-executor to choose the right test command, run it, and report failures or coverage."

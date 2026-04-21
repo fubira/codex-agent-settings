@@ -1,0 +1,4 @@
+interface:
+  display_name: "Prose Linter"
+  short_description: "Tighten technical prose"
+  default_prompt: "Use $prose-linter to remove AI-like tone and make documentation plain and concise."

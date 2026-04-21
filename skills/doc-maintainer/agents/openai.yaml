@@ -1,0 +1,4 @@
+interface:
+  display_name: "Doc Maintainer"
+  short_description: "Keep project docs accurate"
+  default_prompt: "Use $doc-maintainer to update concise project documentation that matches the current code."
