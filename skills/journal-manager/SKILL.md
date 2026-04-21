@@ -1,6 +1,6 @@
 ---
 name: journal-manager
-description: Create, organize, and promote Obsidian work journals. Use when Codex should record experiments, analyses, incident responses, comparisons, decisions, or work logs under WORK/{ORG}_{PROJECT}/journal, or when the user asks to review, consolidate, archive, or extract durable knowledge from journals.
+description: "Create, organize, and promote Obsidian work journals. Use when Codex should record experiments, analyses, incident responses, comparisons, decisions, or work logs under WORK/{ORG}_{PROJECT}/journal, or when the user asks to review, consolidate, archive, or extract durable knowledge from journals."
 ---
 
 # Journal Manager

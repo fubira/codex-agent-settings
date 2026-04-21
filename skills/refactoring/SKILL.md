@@ -1,6 +1,6 @@
 ---
 name: refactoring
-description: Plan, review, or implement behavior-preserving code refactors. Use when Codex is asked to clean up structure, reduce duplication, split modules, improve naming or boundaries, simplify complex code, migrate patterns without feature changes, or assess whether a proposed refactor is safe.
+description: "Plan, review, or implement behavior-preserving code refactors. Use when Codex is asked to clean up structure, reduce duplication, split modules, improve naming or boundaries, simplify complex code, migrate patterns without feature changes, or assess whether a proposed refactor is safe."
 ---
 
 # Refactoring

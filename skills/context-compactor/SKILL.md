@@ -1,6 +1,6 @@
 ---
 name: context-compactor
-description: Audit and compact context-affecting Codex documents. Use only when explicitly asked to reduce context, compact AGENTS.md, review memory size, audit skill token cost, run /compact-context, or propose safe removals from instructions, skills, and knowledge references.
+description: "Audit and compact context-affecting Codex documents. Use only when explicitly asked to reduce context, compact AGENTS.md, review memory size, audit skill token cost, run /compact-context, or propose safe removals from instructions, skills, and knowledge references."
 ---
 
 # Context Compactor

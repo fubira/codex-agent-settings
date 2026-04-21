@@ -1,6 +1,6 @@
 ---
 name: code-review
-description: Review code changes with a reusable baseline checklist and optional project-specific overlays. Use when the user asks for a code review, PR review, diff review, staged change review, regression review, or wants findings prioritized before summaries.
+description: "Review code changes with a reusable baseline checklist and optional project-specific overlays. Use when the user asks for a code review, PR review, diff review, staged change review, regression review, or wants findings prioritized before summaries."
 ---
 
 # Code Review

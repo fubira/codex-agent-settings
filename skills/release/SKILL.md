@@ -1,6 +1,6 @@
 ---
 name: release
-description: General release and deployment workflow for software projects. Use when the user asks to release, deploy, cut a release, bump version, commit release changes, push, tag, or verify CI/CD. The default flow is discover project commands, run lint/test checks, commit, push, create the final release tag, then let CI deploy automatically.
+description: "General release and deployment workflow for software projects. Use when the user asks to release, deploy, cut a release, bump version, commit release changes, push, tag, or verify CI/CD. The default flow is discover project commands, run lint/test checks, commit, push, create the final release tag, then let CI deploy automatically."
 ---
 
 # Release

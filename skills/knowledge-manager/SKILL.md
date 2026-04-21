@@ -1,6 +1,6 @@
 ---
 name: knowledge-manager
-description: Manage the shared Obsidian AI_KNOWLEDGE base. Use when Codex needs to retrieve reusable knowledge before work, record a reusable solution after solving a non-obvious problem, add or update best practices, patterns, troubleshooting notes, workflows, or keep category INDEX.md files aligned without bloating AGENTS.md or memory.
+description: "Manage the shared Obsidian AI_KNOWLEDGE base. Use when Codex needs to retrieve reusable knowledge before work, record a reusable solution after solving a non-obvious problem, add or update best practices, patterns, troubleshooting notes, workflows, or keep category INDEX.md files aligned without bloating AGENTS.md or memory."
 ---
 
 # Knowledge Manager

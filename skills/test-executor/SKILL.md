@@ -1,6 +1,6 @@
 ---
 name: test-executor
-description: Choose, run, and interpret project tests and coverage. Use after code changes, before commits or releases, when the user asks to test, check coverage, diagnose failing tests, or verify Go, TypeScript, Bun, Node, Rust, Python, or project-specific test commands.
+description: "Choose, run, and interpret project tests and coverage. Use after code changes, before commits or releases, when the user asks to test, check coverage, diagnose failing tests, or verify Go, TypeScript, Bun, Node, Rust, Python, or project-specific test commands."
 ---
 
 # Test Executor

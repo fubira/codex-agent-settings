@@ -1,6 +1,6 @@
 ---
 name: doc-maintainer
-description: Maintain concise, accurate project documentation. Use when Codex creates or updates README, AGENTS.md, docs, code comments, knowledge entries, setup instructions, CLI references, or when implementation changes require documentation to stay aligned with current behavior.
+description: "Maintain concise, accurate project documentation. Use when Codex creates or updates README, AGENTS.md, docs, code comments, knowledge entries, setup instructions, CLI references, or when implementation changes require documentation to stay aligned with current behavior."
 ---
 
 # Doc Maintainer

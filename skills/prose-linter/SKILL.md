@@ -1,6 +1,6 @@
 ---
 name: prose-linter
-description: Review and rewrite prose to remove AI-like tone, vague marketing language, verbosity, and self-congratulatory phrasing. Use after documentation, README, AGENTS.md, PR text, knowledge entries, release notes, or user-facing technical prose is created or when the user asks to polish, tighten, or make writing more natural.
+description: "Review and rewrite prose to remove AI-like tone, vague marketing language, verbosity, and self-congratulatory phrasing. Use after documentation, README, AGENTS.md, PR text, knowledge entries, release notes, or user-facing technical prose is created or when the user asks to polish, tighten, or make writing more natural."
 ---
 
 # Prose Linter

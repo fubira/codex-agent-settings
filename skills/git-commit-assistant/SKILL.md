@@ -1,6 +1,6 @@
 ---
 name: git-commit-assistant
-description: Prepare safe Git commits. Use when Codex is asked to commit, stage files, write a commit message, inspect .gitignore, push commit-ready changes, or decide which changed files should be included while avoiding secrets, local settings, generated artifacts, and unrelated user changes.
+description: "Prepare safe Git commits. Use when Codex is asked to commit, stage files, write a commit message, inspect .gitignore, push commit-ready changes, or decide which changed files should be included while avoiding secrets, local settings, generated artifacts, and unrelated user changes."
 ---
 
 # Git Commit Assistant
