@@ -42,3 +42,4 @@ Use this shape:
 - Do not include praise or generic commentary.
 - Do not report purely hypothetical issues without a concrete trigger.
 - Prefer one precise finding over several vague concerns.
+- 同じ根本原因から生じた複数の症状は1件の finding にまとめ、影響箇所を列挙する。
