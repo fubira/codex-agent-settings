@@ -17,6 +17,10 @@
 !/rules/
 !/rules/default.rules
 
+# Shared custom agent roles.
+!/agents/
+!/agents/*.toml
+
 # User-installed skills that should follow the base setup.
 !/skills/
 !/skills/*/
