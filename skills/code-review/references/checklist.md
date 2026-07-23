@@ -38,6 +38,11 @@ Use this checklist to find material issues. Do not report every item; report onl
 - Do not require tests for trivial docs or formatting-only changes.
 - Prefer testing self-authored logic, not third-party library behavior.
 
+## Root-Cause Adequacy
+
+- When the diff responds to an earlier finding, identify the invariant that finding protects.
+- Verify that the fix restores the invariant across every relevant implementation path instead of silencing one symptom.
+
 ## Maintainability
 
 - Flag only maintainability issues that create real risk: confusing ownership, duplicated business rules, over-broad abstractions, or hidden coupling.

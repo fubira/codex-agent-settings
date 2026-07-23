@@ -27,6 +27,22 @@ Use this skill to review changes as a reviewer, not as an implementer. Prioritiz
    - Prefer targeted inspection and small commands over broad, expensive test runs.
    - If tests are important but not run, state that clearly as residual risk.
 
+5. Re-review fixes:
+   - When the diff responds to an earlier finding, state the violated invariant and verify that the fix restores it across all relevant paths.
+   - Do not accept passing tests as evidence of a root-cause fix; relaxed, skipped, or rewritten tests also pass.
+
+## Symptom-Only Fixes
+
+A finding is not closed by silencing its symptom. Keep the original finding open when the change does any of the following without establishing the root cause:
+
+- Adds a branch, guard, or special case only for the reported input.
+- Adjusts thresholds, expected values, or tolerances to match observed output.
+- Swallows exceptions or downgrades errors to warnings or logs.
+- Relaxes, skips, or rewrites tests to assert the new behavior.
+- Fixes one call path when several paths enforce the same invariant.
+
+Ask which invariant was broken. If the invariant cannot be stated, or the answer is only "the test failed," the root cause is not established. Report the original finding again instead of closing it, and inspect the other paths that enforce the same invariant.
+
 ## Review Priorities
 
 - Findings first, ordered by severity.
@@ -34,6 +50,7 @@ Use this skill to review changes as a reviewer, not as an implementer. Prioritiz
 - Explain the concrete failure mode and why it matters.
 - Avoid speculative issues. If something is a question or assumption, label it separately.
 - If no serious issues are found, say so and mention remaining test gaps or residual risk.
+- Treat a symptom-only fix as unresolved at the original severity even when the reported symptom is gone.
 
 ## Project Overlay Convention
 
