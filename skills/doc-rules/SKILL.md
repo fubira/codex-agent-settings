@@ -50,6 +50,7 @@ Apply structure first, then style. Fix what the document says and where it lives
 ## Decision criteria
 
 - When unsure whether text is necessary, remove it. Add it later only when a reader needs it.
+- Do not prescribe the target, the reader, or where work happens. This applies to every document type.
 - Prefer concrete nouns and verbs. Remove adjectives and adverbs that add no mechanism or fact.
 - Preserve the author's intent when changing wording.
 - Do not document unsupported behavior.
