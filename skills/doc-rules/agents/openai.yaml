@@ -1,0 +1,4 @@
+interface:
+  display_name: "Doc Rules"
+  short_description: "Keep technical documentation concise and accurate"
+  default_prompt: "Use $doc-rules to revise this documentation for structure, accuracy, and plain style."

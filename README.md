@@ -6,9 +6,18 @@ Codex の複数環境で共有する基本設定を管理するリポジトリ�
 
 - `AGENTS.md`: 全環境で共有する基本指示
 - `rules/default.rules`: 承認済みコマンドの共通ルール
-- `skills/code-review/`: コードレビュー用のユーザー追加 skill
-- `skills/refactoring/`: リファクタリング用のユーザー追加 skill
-- `skills/release/`: リリース作業用のユーザー追加 skill
+- `skills/`: Git で追跡するユーザー追加 Skill
+  - `code-review`
+  - `context-compactor`
+  - `doc-rules`
+  - `git-commit-assistant`
+  - `journal-manager`
+  - `knowledge-manager`
+  - `refactoring`
+  - `release`
+  - `test-executor`
+  - `workers-best-practices`
+  - `wrangler`
 - `config.example.toml`: `config.toml` の共有可能なテンプレート
 
 ## 管理対象外
