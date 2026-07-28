@@ -5,6 +5,15 @@ description: "Apply documentation rules for structure, length, style, how-to wri
 
 # Documentation Rules
 
+## Inclusion gate
+
+Cutting text after it exists rarely works. Every written line looks defensible on its own, and only the person removing it has to justify the change, so text stays. Put each item through this gate before writing it.
+
+- State in one sentence what the reader would get wrong without this line. If you cannot, do not write it.
+- Keep it only if it changes what the reader does next. Drop background, history, and the reasoning you went through.
+- Do not restate what the code, types, config files, or `git log` already say.
+- Write what the reader needs, not what you learned while working. A document is not a work log.
+
 ## Standards
 
 ### README.md
@@ -49,7 +58,7 @@ Apply structure first, then style. Fix what the document says and where it lives
 
 ## Decision criteria
 
-- When unsure whether text is necessary, remove it. Add it later only when a reader needs it.
+- When unsure whether to write text, leave it out. When unsure whether existing text is necessary, remove it. Add it later only when a reader needs it.
 - Do not prescribe the target, the reader, or where work happens. This applies to every document type.
 - Prefer concrete nouns and verbs. Remove adjectives and adverbs that add no mechanism or fact.
 - Preserve the author's intent when changing wording.
