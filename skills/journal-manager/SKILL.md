@@ -1,54 +1,66 @@
 ---
 name: journal-manager
-description: "Create, organize, and promote Obsidian work journals. Use when Codex should record experiments, analyses, incident responses, comparisons, decisions, or work logs under WORK/{ORG}_{PROJECT}/journal, or when the user asks to review, consolidate, archive, or extract durable knowledge from journals."
+description: "Writes and maintains work journals under WORK/ in the Obsidian vault. Use after an experiment or analysis produces a reading that has no permanent home yet, and when consolidating or promoting existing journals. Do not use for ordinary implementation work, progress logs, or findings that already have a destination."
 ---
 
 # Journal Manager
 
-Use this skill to record chronological thinking and decisions in Obsidian without mixing them into AGENTS.md, memory, or reusable knowledge.
+**journal は恒久の置き場がまだ無い読みの待機場所。** 昇格させたら削除する。
 
-## Location
+## 起動条件
 
-Write journals under:
+**Create**: 実験・分析・判断で、既存の恒久ページに収まらない読みが出たとき
+**Organize**: `/journal-review`, `/journal-cleanup`、active が 20 を超えたとき
 
-`/mnt/c/Users/matsushita/obsidian/notes/WORK/{ORG}_{PROJECT}/journal/YYYY-MM-DD_HHmm_topic.md`
+## 置き場所
 
-Use JST for timestamps. Keep `topic` short and filesystem-safe.
+- **Path**: `WORK/{ORG}_{PROJECT}/journal/YYYY-MM-DD_HHmm_topic.md`（vault root は AGENTS.md の「Obsidian」節）
+- 日付は JST。topic は短く
 
-## What To Record
+## 書く前に昇格先を探す
 
-- Experiments and analyses with conditions, results, findings, and next actions.
-- Decisions with context, options, judgment, trade-offs, and follow-up.
-- Incident responses with situation, root cause, actions, prevention, and lessons.
-- Work logs only when they include meaningful decisions or remaining context.
+**先に恒久の置き場を探し、あればそちらへ直接書く。** journal に置くのは行き先が無いものだけ。
 
-Do not record code diffs, trivial task logs, or durable technical facts better suited to `knowledge-manager`.
+| 内容 | 置き場 |
+|---|---|
+| 会話をまたぐ運用状態・判断待ち | memory |
+| 方法論・規則・その根拠になる実測値 | `journal/` の親ディレクトリの知見ページ |
+| 数値成績・セグメント分析 | 同上 |
+| 汎用的な解法 | `AI_KNOWLEDGE/`（`knowledge-manager` skill 経由） |
+| コード差分・作業ログ・進捗 | 書かない |
 
-## Creation Workflow
+## 書き方
 
-1. Determine the project folder under `WORK/`.
-2. Pick one topic per file.
-3. Preserve numeric tables exactly; do not hand-copy long numeric logs when automatic extraction is available.
-4. Write in document mode.
-5. If the journal reveals reusable knowledge, propose promoting it through `knowledge-manager`.
+- 1 ファイル 1 トピック。数値は表で
+- **無いと読み手が判断を誤る情報だけ。** 何を誤るかを一文で言えないものは書かない
+- 否定した命題（自分の誤りの記録）・検討経緯・将来予定は載せない
 
-## Organization Workflow
+### 型
 
-For `/journal-review`, `/journal-cleanup`, or similar requests:
+**実験・分析**: 背景 → 条件 → 結果（数値表） → 読み → 次の行動
+**判断**: 状況 → 選択肢 → 判断と理由 → 次の行動
+**事故対応**: 事象 → 根本原因 → 対処 → 再発防止
 
-1. Review active journal files without editing first.
-2. Classify each file:
-   - Archive: conclusion reflected elsewhere, superseded, or completed.
-   - Consolidate: several files cover the same theme.
-   - Defer: future work with concrete resume conditions.
-   - Keep: current, sole source, or important incident record.
-3. Present a table and wait for approval.
-4. After approval, move originals to `archives/`; do not delete them.
-5. When consolidating, copy source references and preserve important tables.
+## 昇格と削除
 
-## Boundaries
+内容が恒久ページ・memory・規則へ移ったら **journal ファイルを削除する**。同じ事実が
+2 箇所にあると、どちらが正本か分からなくなる。
 
-- Journals are chronological reasoning.
-- Knowledge entries are reusable guidance.
-- Memory is current operational state.
-- AGENTS.md is for rules needed every session.
+`/journal-review`・`/journal-cleanup` の手順:
+
+1. active な journal を読み、削除 / 統合 / 保留 / 継続 に分類する
+2. 分類を表で示し、承認を待つ
+3. 承認後に実行する。統合するとき（複数 journal を 1 本にまとめるとき）だけ、元を
+   `archives/` へ移す。それ以外は削除する
+4. 統合時も数値表と出典は落とさない
+
+## ディレクトリ構成
+
+```
+{project}/journal/
+├── *.md              # 昇格先が未定のもの
+├── archives/         # 統合前の原本
+└── deferred/         # 保留トピック
+```
+
+`deferred/` は「いつか」ではなく具体的な再開条件を書く。
